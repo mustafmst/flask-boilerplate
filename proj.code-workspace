@@ -5,6 +5,12 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "env/bin/python"
+		"python.pythonPath": "env/bin/python",
+		"files.exclude": {
+			"**/__pycache__": true,
+			"env": true,
+			"proj.code-workspace": true
+		},
+		"python.linting.pylintArgs": ["--load-plugins", "pylint_flask"]
 	}
 }
